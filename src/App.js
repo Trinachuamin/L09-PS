@@ -1,21 +1,29 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DiplomasList from './components/DiplomasList';
-import DiplomaDetails from './components/DiplomaDetails';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import CoursesList from './components/CoursesList';
+import CourseDetails from './components/CourseDetails';
 import ModuleDetails from './components/ModuleDetails';
-import RegistrationForm from './components/RegistrationForm';
+import Register from './components/Register';
 import Confirmation from './components/Confirmation';
 
-const App = () => (
-  <Router>
-    <Routes>
-      <Route path="/diplomas" element={<DiplomasList />} />
-      <Route path="/diplomas/:diplomaId" element={<DiplomaDetails />} />
-      <Route path="/diplomas/:diplomaId/:moduleId" element={<ModuleDetails />} />
-      <Route path="/register" element={<RegistrationForm />} />
-      <Route path="/confirmation" element={<Confirmation />} />
-    </Routes>
-  </Router>
-);
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/courses" element={<CoursesList />}>
+                    <Route path=":courseId" element={<CourseDetails />}>
+                        <Route path=":moduleId" element={<ModuleDetails />} />
+                    </Route>
+                </Route>
+                <Route path="/register" element={<Register />} />
+                <Route path="/confirmation" element={<Confirmation />} />
+            </Routes>
+        </Router>
+    );
+}
 
 export default App;

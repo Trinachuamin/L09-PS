@@ -1,0 +1,409 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Content */
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: #d00000;
+}
+
+.navbar .active {
+    color: #d00000;
+    border-bottom: 2px solid #d00000;
+}
+
+.logo {
+    width: 120px;
+}
+
+/* Course Details Container */
+.course-details-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Diploma Title */
+.diploma-title {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Diploma Modules Section */
+.diploma-modules {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.module-card {
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.module-card:hover {
+    border-color: #80cbc4;
+    background-color: #f0f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.module-card.active {
+    border-color: #80cbc4;
+    background-color: #eaf8f4;
+}
+
+/* Courses List Container */
+.courses-list-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Content Container for CoursesList */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 92.5vh;
+}
+
+/* Schools Title */
+.schools-title {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+/* Schools Links */
+.schools-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.school-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.school-link:hover,
+.school-link:focus {
+    border-bottom: 2px solid #333;
+}
+
+.school-link.active {
+    border-bottom: 2px solid #333;
+}
+
+
+/* Module Cards */
+.modules {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.module-card {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.module-card:hover {
+    border-color: #d00000;
+    background-color: #fff;
+}
+
+.module-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.module-title {
+    font-size: 28px;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.module-name {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.module-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.module-lecturer-details {
+    margin-top: 20px;
+}
+
+.module-lecturer {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lecturer-label {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #f4f4f4;
+    color: #555;
+    font-size: 16px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #d00000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Register Page Styles */
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.register-container .logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.register-container h1 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.register-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #80cbc4;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4caf50;
+}
+
+/* Confirmation Page Styles */
+.confirmation-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.confirmation-container p {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.confirmation-container strong {
+    color: #000;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .modules {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .module-card {
+        width: 100%;
+    }
+}
